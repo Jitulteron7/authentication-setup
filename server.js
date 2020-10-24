@@ -12,6 +12,7 @@ mongoose.connection.on("connected",()=>{
 mongoose.connection.on("error",(err)=>{
     console.log("error while connecting to mongoDB",err);
 })
+// middleware and route in use test
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(AuthRoute);
