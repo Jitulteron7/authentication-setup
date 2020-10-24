@@ -61,6 +61,8 @@ router.post("/sign-in",async (req,res)=>{
 router.get("/",LoginUser,(req,res)=>{
     res.send("hello bro");
 })
-
+router.get("/profile",LoginUser,(req,res)=>{
+    res.send("your profile");
+})
 // router.post("forgot-password",(req,res));
 module.exports=router;
