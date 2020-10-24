@@ -64,5 +64,8 @@ router.get("/",LoginUser,(req,res)=>{
 router.get("/profile",LoginUser,(req,res)=>{
     res.send("your profile");
 })
+router.get("/credits",(req,res)=>{
+    res.send("here are your credits");
+})
 // router.post("forgot-password",(req,res));
 module.exports=router;
